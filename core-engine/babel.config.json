@@ -1,0 +1,48 @@
+{
+  "presets":
+  [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins":
+  [
+    [
+      "babel-plugin-root-import",
+      {
+        "paths": [
+          {
+            "rootPathSuffix": "./",
+            "rootPathPrefix": "~/"
+          },{
+            "rootPathSuffix": "./src/controllers",
+            "rootPathPrefix": "#controllers/"
+          },{
+            "rootPathSuffix": "./src/views",
+            "rootPathPrefix": "#views/"
+          },{
+            "rootPathSuffix": "./src/middlewares",
+            "rootPathPrefix": "#middlewares/"
+          },{
+            "rootPathSuffix": "./lib",
+            "rootPathPrefix": "#lib/"
+          },{
+            "rootPathSuffix": "./config",
+            "rootPathPrefix": "#config/"
+          },{
+            "rootPathSuffix": "./src/utils",
+            "rootPathPrefix": "#utils/"
+          },{
+            "rootPathSuffix": "./src/services",
+            "rootPathPrefix": "#services/"
+          }
+        ]
+      }
+    ],"@babel/plugin-transform-modules-commonjs"
+  ]
+}

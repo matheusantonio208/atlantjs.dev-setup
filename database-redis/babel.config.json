@@ -1,0 +1,16 @@
+{
+  "plugins":
+  [
+    [
+      "babel-plugin-root-import",
+      {
+        "paths": [
+          {
+            "rootPathSuffix": "./src/jobs",
+            "rootPathPrefix": "#jobs"
+          }
+        ]
+      }
+    ]
+  ]
+}

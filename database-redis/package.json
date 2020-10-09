@@ -1,0 +1,12 @@
+{
+  "name": "database-redis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "redis": "node config/redisDB/redis-connection.js"
+  },
+  "dependencies": {
+    "bee-queue": "^1.2.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "core-web-template-view",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/matheusantonio208/core-web-template-view.git",
+  "author": "Matheus Antonio <matheus.antonio208@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -s -D -d dist --presets @babel/preset-env",
+    "prod": "node dist/server.js",
+    "dev": "nodemon -w config/server/server-connection.js --exec \"babel-node config/server/server-connection.js --presets @babel/preset-env\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

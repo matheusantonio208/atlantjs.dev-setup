@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+
+  db-redis:
+    image: redis:alpine
+    container_name: redisDB
+    restart: always
+    depends_on:
+      - nodeJS
+    ports:
+      - ${REDIS_PORT}: "6379"

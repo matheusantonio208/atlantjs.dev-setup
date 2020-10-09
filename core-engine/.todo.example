@@ -1,0 +1,74 @@
+================================================================================
+PROJECT PLAN
+================================================================================
+Features:
+ - Feature 1 - Complete
+ - Feature 2 - Complete
+
+ - Feature 3 - In Production
+
+ - Feature 4 - Planned
+ - Feature 5 - Planned
+
+Libraries, Frameworks and Dependencies:
+- Dependency 1: Function (name-dependency) - Implemented
+- Dependency 2: Function (name-dependency) - Implemented
+- Dependency 3: Function (name-dependency) - Implemented
+
+- Dependency 4: Function (name-dependency) - Planned
+- Dependency 5: Function (name-dependency) - Planned
+
+================================================================================
+FEATURES DEV
+================================================================================
+Name Feature:
+  Models Import:
+  => Model Name
+
+
+  Fields DB:
+    * id           [type] # description field {property: value}
+    * created_at   [type] e description field {standard_values_enum}
+    * updated_at   [type] * description field
+
+    [type]:
+      [s] String
+      [d] Date
+      [i] Integer
+      [e] Enum
+      [a] Array
+      [b] Boolean
+      [=>] Object ID or Reference other table
+
+    * : Mandatory at registration [allowNull: false]
+    # : Unique value in the database [unique: true]
+    e : Enum Field
+
+    {property: value} : property=schema config, value=field value
+    {standard_values_enum} : Default values accepted by that property
+
+  Controller.js                 => Repository.js          =>  Module/Schema.js:
+    [ ] controller.module()     => repository.module()    =>  orm.module()
+        [ ] [field_db] ruler [field_db] rule
+
+  Routes.js > routeModule(base_route)   =>  Controller.js:
+    [ ] '--type: /route/:param'         =>  controller.module()
+
+  Quests:
+    Feature Name:
+      -- SQL --
+      [ ] Create Migrations
+      [ ] Create Table in the Database
+      [ ] Create Model
+      [ ] Load Model
+      -- NoSQL --
+      [ ] Create Schema
+
+      [ ] Import Dependency
+      [ ] Create Controller
+      [ ] Implement Routes
+      [ ] Perform Tests
+      [ ] ++~ git commit ~++
+      [ ] Perform Refactoring
+      [ ] ++~ git commit ~++
+      [ ] ++~ git push ~++

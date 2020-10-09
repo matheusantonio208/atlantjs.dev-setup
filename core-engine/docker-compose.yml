@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+
+  nodeJs:
+    image: node:latest
+    container_name: nodeJs
+    restart: always
+    env_file:
+      - .env
+    ports:
+      ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: yarn start
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-files: "5"
