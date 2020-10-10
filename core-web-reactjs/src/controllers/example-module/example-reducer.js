@@ -4,7 +4,7 @@ export default function example_module(state= [], action) {
   
   switch (action.type) {
     
-    case '@example/ACT_ION': {
+    case '@example/ACTION_SUCCESS': {
       return produce(state, (draft) => {
         const { data } = action;
         draft.push(data);

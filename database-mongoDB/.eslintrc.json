@@ -1,4 +1,15 @@
 {
+    "rules": {
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    "/^#schemas/"
+                ]
+            }
+        ]
+    },
     "settings": {
         "import/resolver": {
             "babel-plugin-root-import": [

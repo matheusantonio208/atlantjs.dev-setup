@@ -2,7 +2,7 @@
  - App Pattern
 
 ### Features
-- Authentication
+- Authentication (keycloak, passportjs)
 - Captcha Security
 - Sending Files
 - Sending Email

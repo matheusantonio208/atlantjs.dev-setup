@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "redis": "node config/redisDB/redis-connection.js"
+    "redis": "node config/redisDB/redis-connection.js",
+    "redis-test": "NODE_ENV=test nodemon config/redisDB/redis-connection.js", //redisdb
+
   },
   "dependencies": {
     "bee-queue": "^1.2.3"

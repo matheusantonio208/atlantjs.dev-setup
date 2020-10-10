@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+		"test": "NODE_ENV=test jest --detectOpenHandles"
+	},
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "babel-jest": "^26.5.2",

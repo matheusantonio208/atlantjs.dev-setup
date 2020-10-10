@@ -5,16 +5,12 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
         "prettier/react"
-
     ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        }
     },
     "plugins": [
         "react"
@@ -22,6 +18,7 @@
     "rules": {
         "react/static-property-placement":"off",
         "react/jsx-filename-extension": ["warn", {"extensions": [".jsx", ".js"] } ],
-        "react/state-in-constructor":"off"
+        "react/state-in-constructor":"off",
+        "no-console": ["error",{"allow": ["tron"]}]
     }
 }

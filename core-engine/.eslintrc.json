@@ -39,10 +39,15 @@
                     "module",
                     "/^@shared/",
                     "/^~/",
+                    "/^#lib/",
+                    "/^#services/",
+                    "/^#utils/",
                     "/^#config/",
-                    "/^#models/",
+                    "/^#middlewares/",
                     "/^#controllers/",
                     "/^#views/",
+                    "/^#config/",
+                    "/^#models/",
                     [
                         "parent",
                         "sibling",
@@ -60,7 +65,7 @@
         "import/resolver": {
             "babel-plugin-root-import": [
                 {
-                    "rootPathSuffix": "./",
+                    "rootPathSuffix": "./src",
                     "rootPathPrefix": "~/"
                 },
                 {
@@ -90,6 +95,10 @@
                 {
                     "rootPathSuffix": "./src/services",
                     "rootPathPrefix": "#services/"
+                },
+                {
+                  "rootPathSuffix": "./src/utils",
+                  "rootPathPrefix": "#utils/"
                 }
             ]
         }

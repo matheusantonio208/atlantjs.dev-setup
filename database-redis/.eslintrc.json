@@ -1,4 +1,15 @@
 {
+    "rules": {
+        "import-helpers/order-imports": [
+          "warn",
+          {
+            "newlinesBetween": "always",
+            "groups": [
+              "/^#jobs/"
+            ]
+          }
+        ]
+    },
     "settings": {
         "import/resolver": {
             "babel-plugin-root-import": [
