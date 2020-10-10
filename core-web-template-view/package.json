@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "express-async-errors": "^3.1.1",
+    "youch": "^2.0.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

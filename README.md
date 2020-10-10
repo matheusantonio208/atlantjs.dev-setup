@@ -8,36 +8,36 @@ core-engine:
 [x] Caminhos de Diretórios Importers (#directory/)
 [x] Variáveis de Ambiente
 [x] Arquivo README.md
-[] Configurar scripts e version no package.json
-[] Configurar docker-composer.yml
+[x] Configurar scripts e version no package.json
+[x] Configurar docker-composer.yml
 
 core-web-reactjs:
 [x] Caminhos de Diretórios Importers (#directory/)
 [x] Variáveis de Ambiente
 [x] Arquivo README.md
-[] Configurar scripts e version no package.json
-[] Configurar docker-composer.yml
+[x] Configurar scripts e version no package.json
+[x] Configurar docker-composer.yml
 
 core-web-template-view:
 [x] Caminhos de Diretórios Importers (#directory/)
 [x] Variáveis de Ambiente
 [x] Arquivo README.md
-[] Configurar scripts e version no package.json
-[] Configurar docker-composer.yml
+[x] Configurar scripts e version no package.json
+[x] Configurar docker-composer.yml
 
 database-mongoDB:
 [x] Caminhos de Diretórios Importers (#directory/)
 [x] Variáveis de Ambiente
 [x] Arquivo README.md
-[] Configurar scripts e version no package.json
-[] Configurar docker-composer.yml
+[x] Configurar scripts e version no package.json
+[x] Configurar docker-composer.yml
 
 database-redis:
 [x] Caminhos de Diretórios Importers (#directory/)
 [x] Variáveis de Ambiente
 [x] Arquivo README.md
-[] Configurar scripts e version no package.json
-[] Configurar docker-composer.yml
+[x] Configurar scripts e version no package.json
+[x] Configurar docker-composer.yml
 
 
 ### ARCH
@@ -45,7 +45,7 @@ database-redis:
 
 1.0 Epiphany
 
-2.0 Work Station
+2.0 Workstation
 2.1 Infrastructure
 
 3.0 Core Engine

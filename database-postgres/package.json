@@ -1,0 +1,14 @@
+{
+  "name": "database-postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0",
+  }
+}

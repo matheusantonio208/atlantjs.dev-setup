@@ -2,7 +2,7 @@
 - Powershell CLI Downloader:        Chocolatey
 - Runtime JavaScript:               NodeJS
 - Package Manager:                  Yarn, PnPm
-- IDE:                              Atom, VSCode - Extensions and Configs (Sync Settings)
+- IDE:                              Atom, VSCode (Extensions and Configs, Sync Settings)
 - Fonts:                            JetBrains Mono, Fira Code Mono
 - Docs:                             Dev Docs App
 - GUI Database:                     Postbird, Mongo Compass

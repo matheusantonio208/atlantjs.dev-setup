@@ -5,6 +5,8 @@ const schema = new Mongoose.Schema({
     type: String,
     required: true,
   },
-});
+},
+  { timestamps: true },
+);
 
 export default Mongoose.model('test', schema);

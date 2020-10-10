@@ -3,6 +3,9 @@ import express from 'express';
 import handlebars from 'express-handlebars';
 import { resolve } from 'path';
 
+import * as YouchLogs from '#config/debugger/youch-config'
+
+
 // import Database from '#config/databaseDB/db-connect';
 
 import routes from '#controllers/routes';
@@ -17,8 +20,9 @@ class App {
 
     // Database.start();
   }
-
+  
   middlewares() {
+    this.server.use(YouchLogs);
     this.server.use(express.json());
   }
 

@@ -1,0 +1,11 @@
+{
+  "name": "nodemailer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.4.10",
+    "express-handlebars": "^5.1.0",
+    "nodemailer-express-handlebars": "^4.0.0"
+  }
+}
