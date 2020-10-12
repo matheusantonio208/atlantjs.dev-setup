@@ -1,17 +1,17 @@
 import Jwt from 'jsonwebtoken';
 import authConfig from '../../../config/auth-config';
-import Session from './session-repository';
+import User from './user-repository';
+import {loggedUserObject} from './user-object';
 
 class SessionController {
   async store(req, res) {
     try {
-      const { email, password_hash } = req.body;
+      const isLogged = await User.login(loggedUserObject(req.body));
 
-      const user = await Session.checkEmail(email);
-      const isPassword = await Session.checkPassword(user, password_hash);
+      if (isLogged) {
+        const user = await User.checkEmail(loggedUserObject(req.body).email);
 
-      if (isPassword) {
-        const loggedUser = {
+        const userAccessToken = {
           user: { id: user.id, name: user.first_name },
           token: Jwt.sign(
             { id: user.id, name: user.first_name },
@@ -22,7 +22,7 @@ class SessionController {
           ),
         };
 
-        return res.status(201).json(loggedUser);
+        return res.status(201).json(userAccessToken);
       }
 
       return false;

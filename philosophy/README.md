@@ -1,9 +1,0 @@
-- Planejamento
-  - DDD
-- Desenvolvimento
-  - TDD
-  - Git Flow
-  - SOLID
-- Acabamento
-  - Refactor
-  - Clean Code

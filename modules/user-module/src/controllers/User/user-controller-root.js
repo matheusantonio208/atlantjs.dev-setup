@@ -5,6 +5,8 @@ import JobWelcomeNewUser from '../../jobs/emails/WelcomeNewUser';
 import JobUpdatedUser from '../../jobs/emails/UpdatedUser';
 import JobDeletedUser from '../../jobs/emails/DeletedUser';
 
+import {updatedUserObject, newUserObject} from './user-object';
+
 class UserController {
   async show(req, res) {
     try {
@@ -25,41 +27,11 @@ class UserController {
 
   async store(req, res) {
     try {
-      const {
-        first_name,
-        last_name,
-        email,
-        password_hash,
-        photo_profile,
-        date_birth,
-        phone_number,
-        country,
-        state,
-        group,
-        date_last_login,
-        locale_last_login,
-        account_status,
-      } = req.body;
-
       if (await User.checkDuplicateEmail(email)) {
         return res.status(400).json({ error_msg: 'Email already register' });
       }
 
-      const user = await User.createUser({
-        first_name,
-        last_name,
-        email,
-        password_hash,
-        photo_profile,
-        date_birth,
-        phone_number,
-        country,
-        state,
-        group,
-        date_last_login,
-        locale_last_login,
-        account_status,
-      });
+      const user = await User.createUser(newUserObject(req.body));
 
       if (user) {
         await JobQueue.add(JobWelcomeNewUser.key, user);
@@ -82,29 +54,7 @@ class UserController {
         });
       }
 
-      const {
-        first_name,
-        last_name,
-        email,
-        password_hash,
-        photo_profile,
-        date_birth,
-        phone_number,
-        country,
-        state,
-      } = req.body;
-
-      const user = await User.updateUserById(userId, {
-        first_name,
-        last_name,
-        email,
-        password_hash,
-        photo_profile,
-        date_birth,
-        phone_number,
-        country,
-        state,
-      });
+      const user = await User.updateUserById(userId, updatedUserObject(req.body));
 
       if (user && req.body.password_hash) {
         await JobQueue.add(JobUpdatedUser.key, {

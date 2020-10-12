@@ -41,9 +41,8 @@ database-redis:
 
 
 ### ARCH
-0.0 Philosophy
-
-1.0 Epiphany
+1.0 [Philosophy](https://www.notion.so/Philosophy-28758056dcfa420089b5cbdb39580520)
+1.1 Epiphany
 
 2.0 Workstation
 2.1 Infrastructure

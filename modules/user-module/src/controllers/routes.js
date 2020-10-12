@@ -2,8 +2,8 @@ import { Router } from 'express';
 
 import isAuth from '../middlewares/auth-middle';
 
-import User from './User/user-controller';
-import Session from './Session/session-controller';
+import User from './User/user-controller-root';
+import Session from './User/session-controller';
 
 class Routes {
   constructor() {

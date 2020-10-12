@@ -2,9 +2,9 @@ import User from '../../schemas/User';
 
 class UserRepository extends Error {
   async getUserById(userId) {
-    const getUser = await User.findById(userId);
-    if (getUser) {
-      return getUser;
+    const userById = await User.findById(userId);
+    if (userById) {
+      return userById;
     }
 
     throw new Error(`Could not find user with id ${userId}`);
@@ -45,6 +45,32 @@ class UserRepository extends Error {
       isDuplicate = true;
     }
     return isDuplicate;
+  }
+
+  async login(userEmail, userPassword) {
+    const isEmail = this.checkEmail(userEmail);
+    const isPassword = this.checkPassword(userPassword);
+
+    if(isEmail && isPassword) {
+      return true;
+    }
+    return false;
+  }
+
+  async checkEmail(userEmail) {
+    const userByEmail = await User.findOne({ email: userEmail });
+    if (userByEmail) {
+      return userByEmail;
+    }
+
+    throw new Error(`Could not find user with email ${userEmail}`);
+  }
+
+  async checkPassword(user, userPassword) {
+    if (user.password_hash === userPassword) {
+      return true;
+    }
+    throw new Error(`Unable to login with this password`);
   }
 }
 
