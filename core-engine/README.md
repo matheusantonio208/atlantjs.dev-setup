@@ -1,15 +1,10 @@
 # core-engine
 
-### Paths
- - [x] Babel
- - [x] JSConfig
- - [x] ESLint
+### Implementações
+[] Kubernets
+[] Sistema de Logs
 
- * #controllers/    -> ./src/controllers
- * #views/          -> ./src/views
- * #config/         -> ./config
- * #middlewares/    -> ./src/middlewares
- * #lib/            -> ./lib
- * #utils/          -> ./src/utils
- * #services/       -> ./src/services
-
+### Requiarament
+- **Workspace**
+- Docker Engine
+- Node JS
