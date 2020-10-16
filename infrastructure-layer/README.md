@@ -5,7 +5,8 @@
 - Seller Service:               Stripe
 - Email Service:                MailChimp, Amazon SES
 - ADS Manager:                  Google Ads Manager, Carbon Ads, BuySellAds
-
+- CI/CD                         Jenkis
+- Logs                          PaperTrail
 ### Servers
 - Amazon AWS
 - Heroku

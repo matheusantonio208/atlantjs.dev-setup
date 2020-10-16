@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles/example-style';
 
-export default class User extends Component {
-  static navigationOptions = ({navigation}) => ({
-    title: navigation.getParam('user').name,
-  });
-
+export default class ExamplePage extends Component {
   static propTypes = {
     navigation: PropTypes.shape({
       getParam: PropTypes.func,
@@ -26,10 +22,7 @@ export default class User extends Component {
   };
 
   render() {
-    const { navigation}  = this.props;
     const { example_state } = this.state;
-
-    const user = navigation.getParam('user');
 
     return (
       <Container loading={example_state}>
