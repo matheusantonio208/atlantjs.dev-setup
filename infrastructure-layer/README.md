@@ -7,10 +7,8 @@
 - ADS Manager:                  Google Ads Manager, Carbon Ads, BuySellAds
 - CI/CD                         Jenkis
 - Logs                          PaperTrail
-### Servers
-- Amazon AWS
-- Heroku
-- Umbler
+- Monitoring                    DataDog, PagerDuty
+- Servers                       Amazon, AWS,  Heroku,  Umbler
 
 ### Server Infrastructure
 - production-web-n: Hospeda o aplicativo em produção

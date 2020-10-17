@@ -19,6 +19,8 @@
         "react/static-property-placement":"off",
         "react/jsx-filename-extension": ["warn", {"extensions": [".jsx", ".js"] } ],
         "react/state-in-constructor":"off",
-        "no-console": ["error",{"allow": ["tron"]}]
+        "no-console": ["error",{"allow": ["tron"]}],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-dps": "warn"
     }
 }

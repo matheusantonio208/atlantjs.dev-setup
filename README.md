@@ -62,3 +62,4 @@ database-redis:
 
 7.0 Modules
 7.1 Tools
+Template de arquitetura de projeto !== Arquitetura de informação (projeto = organização e disposição dos arquivos - informação: a forma como a informação é trafegada e tratada pela sua aplicação)
