@@ -1,24 +1,30 @@
-============================================================================================================================================
-||              NAME                 ||                           APP                                           ||    OS     ||  Project  ||
-============================================================================================================================================
-||______________________________________________________### General_______________________________________________________________________||
-|| - Powershell CLI Downloader:      ||   Chocolatey                                                            ||  Windows  ||    All    ||
-|| - Runtime JavaScript:             ||   NodeJS                                                                ||    All    ||    All    ||
-|| - Package Manager:                ||   Yarn, PnPm                                                            ||    All    ||    All    ||
-|| - IDE:                            ||   Atom, VSCode (Extensions and Configs, Sync Settings), gitPod.io       ||    All    ||    All    ||
-|| - Fonts:                          ||   JetBrains Mono, Fira Code Mono                                        ||    All    ||    All    ||
-|| - Docs:                           ||   Dev Docs App                                                          ||    All    ||    All    ||
-|| - GUI Database:                   ||   Postbird, Mongo Compass                                               ||    All    || Database  ||
-|| - Code Versioning:                ||   Git                                                                   ||    All    ||    All    ||
-|| - Code Repository:                ||   GitHub, GitLab, GitBucket                                             ||    All    ||    All    ||
-|| - Productivity and Collaboration: ||   Google Workspace, Notion, Slack, Discord, Stack Overflow, Linkedin,   ||    All    ||    All    ||
-|| - Finance Manager:                ||   Quickbooks, BREX                                                      ||    All    ||    All    ||
-|| - Password Manager:               ||   1passwords                                                            ||    All    ||    All    ||
-|| ---------------------------------------------------------------------------------------------------------------------------------------||
-||_____________________________________________________### Mobile Dev_____________________________________________________________________||                 
-|| - Debugger:                       ||   Reactotron                                                            ||    All    ||ReactJs/Nv ||
-||----------------------------------------------------------------------------------------------------------------------------------------||
-||_______________________________________________________### Web Dev______________________________________________________________________||                    
-|| - API Request:                    ||   Insomnia                                                              ||    All    ||    Web    ||
-|| - Browser:                        ||   Google Chrome, Firefox, Brave, Edge, Opera (Extensões)                ||    All    || Web/React ||
+================================================================================================================   ============================
+||              NAME                 ||                           APP                                              ||    OS     ||  Project  ||
+================================================================================================================   ============================
+||______________________________________________________### General_____________________________________________   __________________________||
+|| - Powershell CLI Downloader:      ||   Chocolatey                                                               ||  Windows  ||    All    ||
+|| - Runtime JavaScript:             ||   NodeJS                                                                   ||    All    ||    All    ||
+|| - Package Manager:                ||   Yarn, PnPm                                                               ||    All    ||    All    ||
+|| - IDE:                            ||   Atom, VSCode (Extensions and Configs, Sync Settings), gitPod.io          ||    All    ||    All    ||
+|| - Fonts:                          ||   JetBrains Mono, Fira Code Mono                                           ||    All    ||    All    ||
+|| - Docs:                           ||   Dev Docs App                                                             ||    All    ||    All    ||
+|| - GUI Database:                   ||   Postbird, Mongo Compass                                                  ||    All    || Database  ||
+|| - Code Versioning:                ||   Git                                                                      ||    All    ||    All    ||
+|| - Code Repository:                ||   GitHub, GitLab, GitBucket                                                ||    All    ||    All    ||
+|| - Productivity and Collaboration: ||   Google Workspace, Notion, Slack, Discord, Stack Overflow, Linkedin,      ||    All    ||    All    ||
+|| - Finance Manager:                ||   Quickbooks, BREX                                                         ||    All    ||    All    ||
+|| - Password Manager:               ||   1passwords                                                               ||    All    ||    All    ||
+|| -------------------------------------------------------------------------------------------------------------   --------------------------||
+||_____________________________________________________### Mobile Dev___________________________________________   __________________________||                 
+|| - Debugger:                       ||   Reactotron                                                               ||    All    ||ReactJs/Nv ||
+||--------------------------------------------------------------------------------------------------------------   --------------------------||
+||_______________________________________________________### Web Dev____________________________________________   __________________________||                    
+|| - API Request:                    ||   Insomnia                                                                 ||    All    ||    Web    ||
+|| - Browser:                        ||   Google Chrome, Firefox, Brave, Edge, Opera (Extensões), Blisk, LT Browser||    All    || Web/React ||
+||========================================================================================================================================||
+||______________________________________________________### Front End_____________________________________________________________________|| 
+|| - UI Component Style:             ||   StoryBook.Js, Figma                                                   ||    All    || Web/React ||
+||========================================================================================================================================||
+||________________________________________________________### Others______________________________________________________________________|| 
+|| - Cross Browser/ Respons. Testing ||   Lambdatest.com                                                        ||    All    || Web/React ||
 ||========================================================================================================================================||
