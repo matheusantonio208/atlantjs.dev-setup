@@ -14,7 +14,9 @@
   },
   "contributors": ["Matheus Antonio <matheus.antonio208@gmail.com>"],
   "license": "MIT",
-
+  "scripts": {
+    "clean": "rm -f -r ./.dockerignore ./.editorconfig ./.eslintignore ./config ./.eslintrc.json ./.prettierrc ./babel.config.json ./jsconfig.json ./todo.example ./.env.example"
+  },
   "engines": {
     "node": "&gt;= 6.0.0",
     "npm": "&gt;= 3.0.0"
