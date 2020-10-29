@@ -6,7 +6,6 @@
   "scripts": {
     "redis": "node config/redisDB/redis-connection.js",
     "redis-test": "NODE_ENV=test nodemon config/redisDB/redis-connection.js"
-
   },
   "dependencies": {
     "bee-queue": "^1.2.3"

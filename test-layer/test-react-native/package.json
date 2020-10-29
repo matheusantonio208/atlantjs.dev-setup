@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "babel-jest": "^25.1.0",
     "react-test-renderer": "^16.13.1"
   },
   "jest": {

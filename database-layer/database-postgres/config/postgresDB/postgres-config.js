@@ -1,12 +1,19 @@
 require('dotenv/config');
+const {
+  POSTGRESDB_HOST,
+  POSTGRESDB_USER,
+  POSTGRESDB_PASS,
+  POSTGRESDB_NAME,
+  POSTGRESDB_PORT
+} = process.env;
 
 module.exports = {
   dialect: 'postgres',
-  host: process.env.POSTGRESDB_HOST,
-  port: '5432',
-  username: process.env.POSTGRESDB_USER,
-  password: process.env.POSTGRESDB_PASS,
-  database: process.env.POSTGRESDB_NAME,
+  host: POSTGRESDB_HOST,
+  port: POSTGRESDB_PORT,
+  username: POSTGRESDB_USER,
+  password: POSTGRESDB_PASS,
+  database: POSTGRESDB_NAME,
   define: {
     timestamps: true,
     underscored: true,

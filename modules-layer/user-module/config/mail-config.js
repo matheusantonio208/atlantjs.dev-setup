@@ -1,12 +1,20 @@
+const {
+  MAIL_HOST,
+  MAIL_PORT,
+  MAIL_USER,
+  MAIL_PASSWORD,
+  MAIL_FROM_DEFAULT,
+} = process.env;
+
 export default {
-  host: process.env.MAIL_HOST,
-  port: process.env.MAIL_PORT,
+  host: MAIL_HOST,
+  port: MAIL_PORT,
   secure: false,
   auth: {
-    user: process.env.MAIL_USER,
-    pass: process.env.MAIL_PASSWORD,
+    user: MAIL_USER,
+    pass: MAIL_PASSWORD,
   },
   default: {
-    from: process.env.MAIL_FROM_DEFAULT,
+    from: MAIL_FROM_DEFAULT,
   },
 };

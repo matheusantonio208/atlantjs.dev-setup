@@ -1,31 +1,56 @@
-import React from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { Container } from '#views/styles/example-style'
-import * as actionExample from '#controllers/example-module/example-actions';
+import { Container } from '#styles/example-style'
 
-function ExamplePage(){
+import { actionRequest } from '#behavior/example-agregador/example-actions'
+
+export default function ExamplePage() {
+  const [stateExample, setStateFunction] = useState([
+    'Default Value 1',
+    'Default Value 2'
+  ]);
+
+  // Captures the state value of another component. Access information through 'valueState.field'
+  const stateAnotherComponent = useSelector((state) => state.component.valueState);
+
+  const dispatch = useDispatch();
+
+  // Adds a new value in the component's "stateExample" state
+  const handleExample = useCallback(() => {
+    setStateFunction([...stateExample, 'New Value 1']);
+
+    // Fires an action in Redux
+    dispatch(actionRequest(data));
+
+  }, [stateExample]);
+
+  // Perform action once when the component is rendered
+  userEffect(() => {
+    const storageExample = localStorage.getItem('example');
+
+    if (storageExample) {
+      setStateFunction(JSON.parse(storageExample));
+    }
+  }, [])
+
+  // Perform an action whenever the "stateExample" state changes 
+  useEffect(() => {
+    localStorage.setItem('example', JSON.stringify(stateExample));
+  }, [stateExample])
+
+  // Returns a value assigned to a variable as soon as a state changes
+  const exampleValue = useMemo(() => stateExample.length, [stateExample]);
+  
+  // Render the component on screen
   return (
     <Container>
-      <h1>Example Page</h1>
+      <h1>Hello World!</h1>
+      <ul>
+        {stateExample.map(exState => <li key={exState}>{exState}</li>)}
+      </ul>
+      <span>Your state have {exampleValue} information</span>
+      <button type="button" onClick={handleExample}>Change State Component</button>
     </Container>
   )
 }
-
-ExamplePage.propTypes = {
-  repository: PropTypes.shape.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  repository: state.repository.map((item) => ({
-    ...item,
-    newItem: 'Ohh Yeah!'
-  }))
-})
-
-const mapDispatchToProps = (dispatch) => 
-  bindActionCreators(actionExample, dispatch);
-
-export default connect(mapDispatchToProps, mapStateToProps)(ExamplePage)

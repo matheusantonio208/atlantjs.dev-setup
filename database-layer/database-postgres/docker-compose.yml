@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+
+  db-mongo:
+    image: postgres:11
+    container_name: postDB
+    restart: always
+    depends_on:
+      - nodeJS
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRESDB_PASS}
+    ports:
+      - ${POSTGRESDB_PORT}:5432
+

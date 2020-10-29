@@ -1,4 +1,8 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "prettier.jsxSingleQuote": true,
+  "prettier.endOfLine": "auto",
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true
 }

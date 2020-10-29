@@ -1,106 +1,130 @@
 {
-    "env": {
-        "es2021": true
-    },
-    "extends": [
-        "airbnb-base",
-        "prettier"
+  "env": {
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "import-helpers"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
     ],
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "prettier",
-        "import-helpers"
+    "import/extensions": ["error", "always"],
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "camelcase": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "next"
+      }
     ],
-    "rules": {
-        "prettier/prettier": [
-            "error",
-            {
-                "endOfLine": "auto"
-            }
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "module",
+          "/^@shared/",
+          "/^~/",
+          "/^#lib/",
+          "/^#services/",
+          "/^#utils/",
+          "/^#config/",
+          "/^#middlewares/",
+          "/^#controllers/",
+          "/^#jobs/",
+          "/^#views/",
+          "/^#models/",
+          "/^#schemas/",
+          ["parent", "sibling", "index"]
         ],
-        "class-methods-use-this": "off",
-        "no-param-reassign": "off",
-        "camelcase": "off",
-        "no-unused-vars": [
-            "error",
-            {
-                "argsIgnorePattern": "next"
-            }
-        ],
-        "import-helpers/order-imports": [
-            "warn",
-            {
-                "newlinesBetween": "always",
-                "groups": [
-                    "module",
-                    "/^@shared/",
-                    "/^~/",
-                    "/^#lib/",
-                    "/^#services/",
-                    "/^#utils/",
-                    "/^#config/",
-                    "/^#middlewares/",
-                    "/^#controllers/",
-                    "/^#views/",
-                    "/^#config/",
-                    "/^#models/",
-                    [
-                        "parent",
-                        "sibling",
-                        "index"
-                    ]
-                ],
-                "alphabetize": {
-                    "order": "asc",
-                    "ignoreCase": true
-                }
-            }
-        ]
-    },
-    "settings": {
-        "import/resolver": {
-            "babel-plugin-root-import": [
-                {
-                    "rootPathSuffix": "./src",
-                    "rootPathPrefix": "~/"
-                },
-                {
-                    "rootPathSuffix": "./src/controllers",
-                    "rootPathPrefix": "#controllers/"
-                },
-                {
-                    "rootPathSuffix": "./src/views",
-                    "rootPathPrefix": "#views/"
-                },
-                {
-                    "rootPathSuffix": "./lib",
-                    "rootPathPrefix": "#lib/"
-                },
-                {
-                    "rootPathSuffix": "./src/middlewares",
-                    "rootPathPrefix": "#middlewares/"
-                },
-                {
-                    "rootPathSuffix": "./config",
-                    "rootPathPrefix": "#config/"
-                },
-                {
-                    "rootPathSuffix": "./src/lib",
-                    "rootPathPrefix": "#lib/"
-                },
-                {
-                    "rootPathSuffix": "./src/services",
-                    "rootPathPrefix": "#services/"
-                },
-                {
-                  "rootPathSuffix": "./src/utils",
-                  "rootPathPrefix": "#utils/"
-                }
-            ]
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
         }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": [
+        {
+          "rootPathSuffix": "./lib",
+          "rootPathPrefix": "#lib/"
+        },
+        {
+          "rootPathSuffix": "./src/services",
+          "rootPathPrefix": "#services/"
+        },
+        {
+          "rootPathSuffix": "./src/utils",
+          "rootPathPrefix": "#utils/"
+        },
+        {
+          "rootPathSuffix": "./config",
+          "rootPathPrefix": "#config/"
+        },
+        {
+          "rootPathSuffix": "./src/middlewares",
+          "rootPathPrefix": "#middlewares/"
+        },
+        {
+          "rootPathSuffix": "./src/controllers",
+          "rootPathPrefix": "#controllers/"
+        },
+        {
+          "rootPathSuffix": "./src/jobs",
+          "rootPathPrefix": "#jobs/"
+        },
+        {
+          "rootPathSuffix": "./src/views",
+          "rootPathPrefix": "#views/"
+        },
+        {
+          "rootPathSuffix": "./models",
+          "rootPathPrefix": "#models/"
+        },
+        {
+          "rootPathSuffix": "./schemas",
+          "rootPathPrefix": "#schemas/"
+        },
+        {
+          "rootPathSuffix": "./src/views/styles",
+          "rootPathPrefix": "#styles/"
+        },
+        {
+          "rootPathSuffix": "./src/views/assets",
+          "rootPathPrefix": "#assets/"
+        },
+        {
+          "rootPathSuffix": "./src/views/layouts",
+          "rootPathPrefix": "#layouts/"
+        },
+        {
+          "rootPathSuffix": "./src/views/pages",
+          "rootPathPrefix": "#pages/"
+        },
+        {
+          "rootPathSuffix": "./src/views/partials",
+          "rootPathPrefix": "#partials/"
+        },
+        {
+          "rootPathSuffix": "./src/views/components",
+          "rootPathPrefix": "#components/"
+        },
+        {
+          "rootPathSuffix": "./src/views/behaviors",
+          "rootPathPrefix": "#behaviors/"
+        }
+      ]
     }
+  }
 }

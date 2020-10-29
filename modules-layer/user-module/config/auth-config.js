@@ -1,4 +1,5 @@
+const { AUTH_KEY } = process.env;
 export default {
-  secret_key: process.env.AUTH_KEY,
+  secret_key: AUTH_KEY,
   expiresIn: '7d',
 };
