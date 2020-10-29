@@ -1,6 +1,36 @@
 {
+  "parents":{
+  },
+  "brothers":{
+  },
   "dependencies": {
   },
-  "relations":{
+  "roots":{
+    "#lib": "./lib",
+    "#services": "./src/services",
+    "#utils": "./src/utils",
+    "#config": "./config",
+    "#middlewares": "./src/middlewares",
+    "#controllers": "./src/controllers",
+    "#jobs": "./src/jobs",
+    "#views": "./src/views",
+    "#models": "./models",
+    "#schemas": "./schemas",
+
+    "#styles": "./src/views/styles",
+    "#assets": "./src/views/assets",
+    "#layouts": "./src/views/layouts",
+    "#pages": "./src/views/pages",
+    "#partials": "./src/views/partials",
+    "#components": "./src/views/components",
+    "#behaviors": "./src/views/behaviors"
+  },
+  "scripts":{
+    "add <module> --without <context>": "echo 'Exclui determinado contexto na criação do módulo",
+    "clean":"echo 'Excluir arquivos de exemplo e arquivos .gitkeep, deixando apenas arquivos para o funcionamento do modulo'",
+    "clean-comments":"echo 'Excluir os comentários de ajuda em todos os arquivos'",
+    "build":"echo 'Realiza a checagem para ver se é necessário o docker-compose.yml, se está tudo dentro dos padrões. Insere os roots nos arquivos babel.config, eslint.json... Deleta arquivo padrões do core engine, encapsulando o contexto do módulo",
+    "upload":"echo 'Realiza o commit padronizado/ push para o repositório referente ao módulo",
+    "reverse": "echo 'Desfaz o último comando'"
   }
 }

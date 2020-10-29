@@ -1,10 +1,24 @@
 {
   "name": "core-engine",
+  "description": "A Node.js project",
+  "keywords": ["email","machine learning","ai"],
   "version": "1.0.0",
   "main": "index.js",
+  "private": false,
   "repository": "https://github.com/matheusantonio208/core-engine.git",
-  "author": "Matheus Antonio <matheus.antonio208@gmail.com>",
+  "bugs": "https://github.com/matheusantonio208/core-engine.git/issues",
+  "author": {
+    "name": "Matheus",
+    "email": "matheus.antoni208@gmail.com",
+    "url": "https://github.com/matheusantonio208"
+  },
+  "contributors": ["Matheus Antonio <matheus.antonio208@gmail.com>"],
   "license": "MIT",
+
+  "engines": {
+    "node": "&gt;= 6.0.0",
+    "npm": "&gt;= 3.0.0"
+  },
   "dependencies": {
     "dotenv": "^8.2.0"
   },
