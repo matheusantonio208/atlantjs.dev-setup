@@ -15,11 +15,14 @@
   "contributors": ["Matheus Antonio <matheus.antonio208@gmail.com>"],
   "license": "MIT",
   "scripts": {
-    "clean": "rm -f -r ./.dockerignore ./.editorconfig ./.eslintignore ./config ./.eslintrc.json ./.prettierrc ./babel.config.json ./jsconfig.json ./todo.example ./.env.example"
+    "install-engines": "npm install -g pnpm; git init; git add .; git commit -m 'init project'; git remote add origin <url>; git branch -M main; git push -u origin main",
+    "setup": "npm install -g pnpm; pnpm install",
+    "clean-core-engine": "rm -f -r ./.dockerignore ./.editorconfig ./.eslintignore ./config ./.eslintrc.json ./.prettierrc ./babel.config.json ./jsconfig.json ./todo.example ./.env.example; pnpm uninstall -D @babel/cli @babel/core @babel/node @babel/plugin-transform-modules-commonjs @babel/preset-env babel-eslint babel-plugin-root-import eslint eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-import-resolver-babel-plugin-root-import eslint-plugin-import eslint-plugin-import-helpers eslint-plugin-prettier prettier; pnpm uninstall -S dotenv;"
   },
   "engines": {
-    "node": "&gt;= 6.0.0",
-    "npm": "&gt;= 3.0.0"
+    "node": "^10.16.0",
+    "npm": "^6.9.0",
+    "pnpm": "^5.10.2"
   },
   "dependencies": {
     "dotenv": "^8.2.0"

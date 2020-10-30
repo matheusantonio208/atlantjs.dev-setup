@@ -26,6 +26,8 @@
     "#behaviors": "./src/views/behaviors"
   },
   "scripts":{
+    "install-engines": "npm install -g pnpm",
+    "setup-project": "pnpm install",
     "add <module> --without <context>": "echo 'Exclui determinado contexto na criação do módulo",
     "clean":"echo 'Excluir arquivos de exemplo e arquivos .gitkeep, deixando apenas arquivos para o funcionamento do modulo'",
     "clean-comments":"echo 'Excluir os comentários de ajuda em todos os arquivos'",
