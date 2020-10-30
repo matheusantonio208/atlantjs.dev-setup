@@ -18,6 +18,6 @@
     "react/state-in-constructor":"off",
     "no-console": ["error",{"allow": ["tron"]}],
     "react/jsx-props-no-spreading": "off",
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "error"
   }
 }

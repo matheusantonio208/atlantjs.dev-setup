@@ -1,0 +1,9 @@
+{
+  "parents":{
+    "core-engine": "echo <url_repository>"
+  },
+  "brothers":{
+  },
+  "dependencies": {
+  }
+}

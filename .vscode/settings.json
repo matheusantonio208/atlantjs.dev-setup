@@ -7,7 +7,6 @@
     "test-layer": true,
     "tools-layer": true,
     "work-env": true,
-    ".gitignore": true,
     "README.md": true,
     ".vscode": true,
     "platform-layer/platform-mobile-react-native": true
