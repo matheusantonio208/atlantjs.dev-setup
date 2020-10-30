@@ -11,6 +11,6 @@ if (NODE_ENV === 'development') {
     .connect();
 
   tron.clear();
-  
+
   console.tron = tron;
 }

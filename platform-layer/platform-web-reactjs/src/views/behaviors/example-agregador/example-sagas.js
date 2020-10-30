@@ -1,8 +1,9 @@
-import { select, put, all, takeLatest } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
+import { select, put, all, takeLatest } from 'redux-saga/effects';
 
-import { action } from './example-actions';
-import history from '#lib/history-lib';
+import history from '#lib/history-lib.js';
+
+import { action } from './example-actions.js';
 
 function* middlewareAction({ id }) {
   try {
@@ -16,12 +17,9 @@ function* middlewareAction({ id }) {
 
     yield put(action(data));
     history.push('/next-page');
-
   } catch (error) {
     toast.error('Error. Check the request');
   }
 }
 
-export default all([
-  takeLatest('@example/ACTION_REQUEST', middlewareAction),
-]);
+export default all([takeLatest('@example/ACTION_REQUEST', middlewareAction)]);

@@ -1,23 +1,23 @@
 {
-    "extends": [
-        "plugin:react/recommended",
-        "prettier/react"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "react/static-property-placement":"off",
-        "react/jsx-filename-extension": ["warn", {"extensions": [".jsx", ".js"] } ],
-        "react/state-in-constructor":"off",
-        "no-console": ["error",{"allow": ["tron"]}],
-        "react/jsx-props-no-spreading": "off",
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-dps": "warn"
+  "extends": [
+    "plugin:react/recommended",
+    "prettier/react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "react/static-property-placement":"off",
+    "react/jsx-filename-extension": ["warn", {"extensions": [".jsx", ".js"] } ],
+    "react/state-in-constructor":"off",
+    "no-console": ["error",{"allow": ["tron"]}],
+    "react/jsx-props-no-spreading": "off",
+    "react-hooks/rules-of-hooks": "error",
+  }
 }

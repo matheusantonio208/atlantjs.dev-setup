@@ -1,7 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-import { Wrapper, Content } from './styles';
+import { Wrapper, Content } from '#styles/layouts/default-layout-style.js';
 
 export default function SnippetLayout({ children }) {
   return (

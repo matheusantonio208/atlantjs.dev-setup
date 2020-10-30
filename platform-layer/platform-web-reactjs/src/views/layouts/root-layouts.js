@@ -1,14 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Route } from 'react-router-dom';
 
-import ExampleLayout from '#layouts/example-layout';
+import ExampleLayout from '#layouts/example-layout.js';
 
-export default function RouterWrapper({
-  component: Component,
-  ...rest 
-}) {
-
+export default function RouterWrapper({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}

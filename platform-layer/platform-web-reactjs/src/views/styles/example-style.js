@@ -5,3 +5,4 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
 `;
+export const Wrapper = styled.div``;

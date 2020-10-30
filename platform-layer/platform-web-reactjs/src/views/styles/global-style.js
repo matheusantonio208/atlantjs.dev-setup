@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../assets/images/background.svg';
+
+import background from '#assets/img/background.svg';
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 
@@ -16,11 +17,11 @@ export default createGlobalStyle`
   *:focus {
     outline: 0;
   }
-  
+
   html, body, #root {
     height: 100%;
   }
-  
+
   #root {
     max-width: 1020px;
     margin: 0 auto;

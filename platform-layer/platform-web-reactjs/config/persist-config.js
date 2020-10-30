@@ -8,7 +8,7 @@ export default (reducers) => {
       storage,
       whitelist: ['valueFieldA', 'valueFieldB'],
     },
-    reducers
+    reducers,
   );
 
   return persistedReducer;

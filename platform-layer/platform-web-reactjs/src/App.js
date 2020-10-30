@@ -1,16 +1,19 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
-import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import { Router } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import '#config/reactotron-config';
+import { PersistGate } from 'redux-persist/integration/react';
+import '#config/debug/reactotron-config.js';
 
-import { store, persistor } from '#config/redux-config';
-import Routes from '#behavior/routes-front';
-import GlobalStyle from '#styles/global';
-import Header from '#components/Header/index';
+import history from '#lib/history-lib.js';
 
-import history from '#lib/history';
+import { store, persistor } from '#config/redux-config.js';
+
+import GlobalStyle from '#styles/global-style.js';
+
+import Header from '#components/globals/Header.js';
+
+import Routes from '#behaviors/routes-front.js';
 
 function App() {
   return (
