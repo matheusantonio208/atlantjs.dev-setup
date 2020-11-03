@@ -1,12 +1,12 @@
 export function actionRequest(data) {
   return {
-    type: '@example/ACTION_REQUEST',
-    data,
+    type: '@entity/ACTION_REQUEST',
+    payload: { data },
   };
 }
-export function action(data) {
+export function actionSuccess(data) {
   return {
-    type: '@example/ACTION_SUCCESS',
-    data,
+    type: '@entity/ACTION_SUCCESS',
+    payload: { data },
   };
 }

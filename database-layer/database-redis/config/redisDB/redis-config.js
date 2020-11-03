@@ -1,9 +1,4 @@
-const {
-  REDIS_HOST,
-  REDIS_PORT
-} = process.env;
-
 export default {
-  host: REDIS_HOST,
-  port: REDIS_PORT,
+  host: process.env.REDIS_HOST,
+  port: process.env.REDIS_PORT,
 };

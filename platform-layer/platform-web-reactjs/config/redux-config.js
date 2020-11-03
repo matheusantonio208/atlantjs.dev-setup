@@ -7,15 +7,15 @@ import persistReducers from '#config/persist-config.js';
 import rootReducer from '#behaviors/root-reducer.js';
 import rootSaga from '#behaviors/root-sagas.js';
 
-const { NODE_ENV } = process.env;
-
 const sagaMonitor =
-  NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;
+  process.env.NODE_ENV === 'development'
+    ? console.tron.createSagaMonitor()
+    : null;
 
 const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
 const enhancer =
-  NODE_ENV === 'development'
+  process.env.NODE_ENV === 'development'
     ? compose(console.tron.createEnhancer(), applyMiddleware(sagaMiddleware))
     : applyMiddleware(sagaMiddleware);
 

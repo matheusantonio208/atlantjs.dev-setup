@@ -13,7 +13,7 @@ class Routes {
         success_msg: 'Welcome to Atlantjs. Onde sua criatividade vira realidade.',
       });
     });
-
+  
     this.route.post(`${baseRoute}/db`, (req, res) => {
       return res.status(201).json({ success_msg: 'Already!' });
     });

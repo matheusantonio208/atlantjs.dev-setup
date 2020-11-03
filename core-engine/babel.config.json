@@ -51,7 +51,7 @@
             "rootPathPrefix": "#schemas/"
           },
           {
-            "rootPathSuffix": "./src/services",
+            "rootPathSuffix": "./services",
             "rootPathPrefix": "#services/"
           },
           {

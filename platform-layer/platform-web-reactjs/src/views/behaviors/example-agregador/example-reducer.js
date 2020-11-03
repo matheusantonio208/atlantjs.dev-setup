@@ -1,17 +1,14 @@
 import produce from 'immer';
 
 const INITIAL_STATE = {
-  valueA: null,
-  valueB: false,
-  valueC: true,
+  fieldA: null,
 };
 
-export default function example_module(state = INITIAL_STATE, action) {
+export default function entityName(state = INITIAL_STATE, action) {
   return produce(state, (draft) => {
     switch (action.type) {
-      case '@example/ACTION_SUCCESS': {
-        const { data } = action;
-        draft.push(data);
+      case '@entity/ACTION_NAME': {
+        
         break;
       }
 

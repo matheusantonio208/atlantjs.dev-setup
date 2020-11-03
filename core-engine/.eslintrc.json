@@ -68,7 +68,7 @@
           "rootPathPrefix": "#lib/"
         },
         {
-          "rootPathSuffix": "./src/services",
+          "rootPathSuffix": "./services",
           "rootPathPrefix": "#services/"
         },
         {

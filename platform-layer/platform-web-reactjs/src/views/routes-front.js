@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
 
-import Route from '#layouts/root-layouts.js';
+import Route from '#pages/_layouts/root-layouts.js';
 
 import ExamplePage from '#pages/example-page.js';
 

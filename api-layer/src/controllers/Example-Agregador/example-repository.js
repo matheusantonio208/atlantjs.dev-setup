@@ -19,4 +19,4 @@ class ExampleRepository extends Error {
  * ===================================== */  
 }
 
-export default new ExampleRepository();
+export default new ExampleRepository();   

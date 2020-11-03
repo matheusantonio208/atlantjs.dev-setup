@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "#lib/*": ["./lib/*"],
-      "#services/*": ["./src/services/*"],
+      "#services/*": ["./services/*"],
       "#utils/*": ["./src/utils/*"],
       "#config/*": ["./config/*"],
       "#middlewares/*": ["./src/middlewares/*"],
@@ -19,7 +19,7 @@
       "#pages/*": ["./src/views/pages/*"],
       "#partials/*": ["./src/views/partials/*"],
       "#components/*": ["./src/views/components/*"],
-      "#behaviors/*": ["./src/views/behaviors/*"],
+      "#behaviors/*": ["./src/views/behaviors/*"]
     }
   }
 }

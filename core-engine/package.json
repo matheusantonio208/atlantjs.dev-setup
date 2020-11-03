@@ -2,18 +2,23 @@
   "name": "core-engine",
   "description": "A Node.js project",
   "keywords": ["email","machine learning","ai"],
+
   "version": "1.0.0",
   "main": "index.js",
   "private": false,
+
   "repository": "https://github.com/matheusantonio208/core-engine.git",
   "bugs": "https://github.com/matheusantonio208/core-engine.git/issues",
+
   "author": {
     "name": "Matheus",
     "email": "matheus.antoni208@gmail.com",
     "url": "https://github.com/matheusantonio208"
   },
   "contributors": ["Matheus Antonio <matheus.antonio208@gmail.com>"],
+
   "license": "MIT",
+
   "scripts": {
     "install-engines": "npm install -g pnpm; git init; git add .; git commit -m 'init project'; git remote add origin <url>; git branch -M main; git push -u origin main",
     "setup": "npm install -g pnpm; pnpm install",
@@ -21,9 +26,6 @@
   },
   "engines": {
     "node": "^10.16.0"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",

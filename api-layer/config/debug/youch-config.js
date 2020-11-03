@@ -3,9 +3,7 @@ import 'express-async-errors';
 
 
 export default async (err, req, res, next) => {
-  const { NODE_ENV } = process.env
-  
-  if (NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development') {
     const errors = await new Youch(err, req).toJSON();
     return res.status(500).json(errors);
   };

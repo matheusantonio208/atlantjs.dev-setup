@@ -8,4 +8,4 @@ services:
     depends_on:
       - nodeJS
     ports:
-      - ${REDIS_PORT}: "6379"
+      - ${REDIS_PORT}:6379

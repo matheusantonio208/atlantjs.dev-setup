@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import background from '#assets/img/background.svg';
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 
@@ -22,14 +21,8 @@ export default createGlobalStyle`
     height: 100%;
   }
 
-  #root {
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 0 20px 50px;
-  }
-
   body {
-    background: #191920 url(${background}) no-repeat center;
+    background: #F5F5F5;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -48,4 +41,5 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
 `;
