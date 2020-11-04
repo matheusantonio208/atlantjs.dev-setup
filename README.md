@@ -6,7 +6,7 @@
 
 ### ARCH
 === IDEALIZAÇÃO/ CONCEPÇÃO ===
-1.0 [Philosophy](https://www.notion.so/Philosophy-28758056dcfa420089b5cbdb39580520)
+1.0 Philosophy
 1.1 Epiphany
 
 === Ambientes ===

@@ -9,6 +9,7 @@
 - Logs                          PaperTrail
 - Monitoring                    DataDog, PagerDuty
 - Servers                       Amazon, AWS,  Heroku,  Umbler
+- Other                         PM2
 
 ### Server Infrastructure
 - production-web-n: Hospeda o aplicativo em produção

@@ -1,0 +1,31 @@
+{
+  "name": "tests-react-native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^8.0.6",
+    "@types/jest": "^24.0.15",
+    "axios-mock-adapter": "^1.17.0",
+    "jest-localstorage-mock": "^2.4.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/react/cleanup-after-each",
+      "@testing-library/jest-dom/extend-expect",
+      "jest-localstorage-mock"
+    ],
+    "moduleNameMapper": {
+      "^~/(.*)": "<rootDir>/src/$1"
+    },
+    "collectCoverageFrom": [
+      "!src/index.js",
+      "!src/services/api.js"
+    ],
+    "coverageDirectory": "__tests__/coverage"
+  }
+}
