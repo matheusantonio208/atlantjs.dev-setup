@@ -1,6 +1,6 @@
 import BeeQueue from 'bee-queue';
 
-import redisConfig from '#config/redisDB/redis-config';
+import redisConfig from '#config/redisDB/redis-config.js';
 
 const jobs = [];
 

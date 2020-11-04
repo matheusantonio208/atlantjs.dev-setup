@@ -1,17 +1,3 @@
 {
-  "files.exclude": {
-    "infrastructure-layer": true,
-    "modules-layer": true,
-    "README.md": true,
-    "platform-layer/platform-mobile-react-native": true,
-    "work-env": true,
-    "tools-layer": true,
-    ".gitignore": true,
-    ".vscode": true,
-    "test-layer/test-react-native": true,
-    "test-layer/test-core": true,
-    "api-layer": true,
-    "database-layer": true,
-    "core-engine": true
-  }
+  "files.exclude": {}
 }

@@ -1,4 +1,4 @@
-import SentryConnect from '#config/sentry-connect';
+import SentryConnect from '#config/sentry-connect.js';
 
 class ApiConfig {
   middlewares(){

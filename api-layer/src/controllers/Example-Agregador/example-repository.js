@@ -1,4 +1,4 @@
-import SchemaExample from '#schemas/schema-example';
+import SchemaExample from '#schemas/schema-example.js';
 
 class ExampleRepository extends Error {
   async getOneExample({_id}) {

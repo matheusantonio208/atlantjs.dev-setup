@@ -1,8 +1,8 @@
 import Sequelize from 'sequelize';
 
-import databaseConfig from '#config/postgresDB/postgres-config';
+import databaseConfig from '#config/postgresDB/postgres-config.js';
 
-import ExampleModel from '#models/ExampleModel';
+import ExampleModel from '#models/ExampleModel.js';
 
 class PostgresConnect {
   constructor() {

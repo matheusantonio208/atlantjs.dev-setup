@@ -1,8 +1,8 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import ExamplePage from '#views/pages/example-page';
-import OtherExamplePage from '#views/pages/other-example-page';
+import ExamplePage from '#views/pages/example-page.js';
+import OtherExamplePage from '#views/pages/other-example-page.js';
 
 const Routes = createAppContainer(
   createStackNavigator(

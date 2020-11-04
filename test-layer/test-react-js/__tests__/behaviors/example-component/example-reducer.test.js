@@ -1,5 +1,5 @@
 import reducer, { INITIAL_STATE } from '#behaviors/example-agregador/example-reducer.js';
-import * as ExampleActions from '#behaviors/example-agregador/example-actions';
+import * as ExampleActions from '#behaviors/example-agregador/example-actions.js';
 
 describe('ExampleActions reducer', () => {
   it('DEFAULT', () => {

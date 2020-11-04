@@ -1,5 +1,5 @@
 import * as Sentry from '@sentry/node';
-import sentryConfig from '#config/sentry-config'
+import sentryConfig from '#config/sentry-config.js'
 
 class SentryConnect {
   constructor(){
