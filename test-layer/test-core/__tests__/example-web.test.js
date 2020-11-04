@@ -3,7 +3,7 @@ import request from 'supertest';
 
 import server from '#config/server/api-config.js';
 
-import factory from '#utils/factories.js';
+import factory from './utils/factories';
 
 describe('teste template', () => {
   beforeEach(async () => {
@@ -11,7 +11,7 @@ describe('teste template', () => {
   });
 
   it('the project was successfully installed', async () => {
-    const response = await request(server).get('/test');
+    const response = await request(server).get('/');
 
     expect(response.status).toBe(200);
   });

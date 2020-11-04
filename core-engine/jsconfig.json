@@ -10,8 +10,8 @@
       "#controllers/*": ["./src/controllers/*"],
       "#jobs/*": ["./src/jobs/*"],
       "#views/*": ["./src/views/*"],
-      "#models/*": ["./models/*"],
-      "#schemas/*": ["./schemas/*"],
+      "#models/*": ["./src/models/*"],
+      "#schemas/*": ["./src/schemas/*"],
 
       "#styles/*": ["./src/views/styles/*"],
       "#assets/*": ["./src/views/assets/*"],

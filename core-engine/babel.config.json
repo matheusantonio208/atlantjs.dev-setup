@@ -47,11 +47,11 @@
             "rootPathPrefix": "#models/"
           },
           {
-            "rootPathSuffix": "./schemas",
+            "rootPathSuffix": "./src/schemas",
             "rootPathPrefix": "#schemas/"
           },
           {
-            "rootPathSuffix": "./services",
+            "rootPathSuffix": "./src/services",
             "rootPathPrefix": "#services/"
           },
           {

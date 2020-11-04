@@ -68,7 +68,7 @@
           "rootPathPrefix": "#lib/"
         },
         {
-          "rootPathSuffix": "./services",
+          "rootPathSuffix": "./src/services",
           "rootPathPrefix": "#services/"
         },
         {
@@ -96,11 +96,11 @@
           "rootPathPrefix": "#views/"
         },
         {
-          "rootPathSuffix": "./models",
+          "rootPathSuffix": "./src/models",
           "rootPathPrefix": "#models/"
         },
         {
-          "rootPathSuffix": "./schemas",
+          "rootPathSuffix": "./src/schemas",
           "rootPathPrefix": "#schemas/"
         },
         {

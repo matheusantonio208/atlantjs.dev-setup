@@ -25,7 +25,7 @@
     "clean-core-engine": "rm -f -r ./.dockerignore ./.editorconfig ./.eslintignore ./config ./.eslintrc.json ./.prettierrc ./babel.config.json ./jsconfig.json ./todo.example ./.env.example; pnpm uninstall -D @babel/cli @babel/core @babel/node @babel/plugin-transform-modules-commonjs @babel/preset-env babel-eslint babel-plugin-root-import eslint eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-import-resolver-babel-plugin-root-import eslint-plugin-import eslint-plugin-import-helpers eslint-plugin-prettier prettier; pnpm uninstall -S dotenv;"
   },
   "engines": {
-    "node": "^10.16.0"
+    "node": "^14.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
