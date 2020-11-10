@@ -34,5 +34,7 @@
     "build":"echo 'Realiza a checagem para ver se é necessário o docker-compose.yml, se está tudo dentro dos padrões. Insere os roots nos arquivos babel.config, eslint.json... Deleta arquivo padrões do core engine, encapsulando o contexto do módulo",
     "upload":"echo 'Realiza o commit padronizado/ push para o repositório referente ao módulo",
     "reverse": "echo 'Desfaz o último comando'"
+  },
+  "snippets":{
   }
 }

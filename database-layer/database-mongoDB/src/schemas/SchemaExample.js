@@ -1,4 +1,4 @@
-import Mongoose from 'mongoose';
+import Mongoose, { model } from 'mongoose';
 
 const schema = new Mongoose.Schema({
   name: {
@@ -9,4 +9,4 @@ const schema = new Mongoose.Schema({
   { timestamps: true },
 );
 
-export default Mongoose.model('test', schema);
+export default model('test', schema);

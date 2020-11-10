@@ -1,32 +1,19 @@
-===============================================================================================================================================
-||              NAME                 ||                           APP                                              ||    OS     ||  Project  ||
-===============================================================================================================================================
-||______________________________________________________### General__________________________________________________________________________||
-|| - Powershell CLI Downloader:      ||   Chocolatey                                                               ||  Windows  ||    All    ||
-|| - Runtime JavaScript:             ||   NodeJS                                                                   ||    All    ||    All    ||
-|| - Package Manager:                ||   Yarn, PnPm                                                               ||    All    ||    All    ||
-|| - IDE:                            ||   Atom, VSCode (Extensions and Configs, Sync Settings), gitPod.io          ||    All    ||    All    ||
-|| - Terminal:                       ||   e-dex ui, oh my zhs, chocolatey                                          ||    All    ||    All    ||
-|| - Fonts:                          ||   JetBrains Mono, Fira Code Mono                                           ||    All    ||    All    ||
-|| - Docs:                           ||   Dev Docs App                                                             ||    All    ||    All    ||
-|| - GUI Database:                   ||   Postbird, Mongo Compass                                                  ||    All    || Database  ||
-|| - Code Versioning:                ||   Git                                                                      ||    All    ||    All    ||
-|| - Code Repository:                ||   GitHub, GitLab, GitBucket                                                ||    All    ||    All    ||
-|| - Productivity and Collaboration: ||   Google Workspace, Notion, Slack, Discord, Stack Overflow, Linkedin,      ||    All    ||    All    ||
-|| - Finance Manager:                ||   Quickbooks, BREX                                                         ||    All    ||    All    ||
-|| - Password Manager:               ||   1passwords                                                               ||    All    ||    All    ||
-||-------------------------------------------------------------------------------------------------------------------------------------------||
-||_____________________________________________________### Mobile Dev________________________________________________________________________||                 
-|| - Debugger:                       ||   Reactotron                                                               ||    All    ||ReactJs/Nv ||
-||-------------------------------------------------------------------------------------------------------------------------------------------||
-||_______________________________________________________### Web Dev_________________________________________________________________________||                    
-|| - API Request:                    ||   Insomnia                                                                 ||    All    ||    Web    ||
-|| - Browser:                        ||   Google Chrome, Firefox, Brave, Edge, Opera (Extensões), Blisk, LT Browser||    All    || Web/React ||
-||===========================================================================================================================================||
-||______________________________________________________### Front End________________________________________________________________________|| 
-|| - UI Component Style:             ||   StoryBook.Js, Figma                                                      ||    All    || Web/React ||
-||===========================================================================================================================================||
-||________________________________________________________### Others_________________________________________________________________________|| 
-|| - Cross Browser/ Respons. Testing ||   Lambdatest.com                                                           ||    All    || Web/React ||
-|| - Quality Code                    ||   SonarQube                                                                ||    All    || Web/React ||
-||===========================================================================================================================================||
+ - Powershell CLI Downloader:           Chocolatey
+ - Runtime JavaScript:                  NodeJS 
+ - Package Manager:                     Yarn, PnPm 
+ - IDE:                                 Atom, VSCode (Extensions and Configs, Sync Settings), gitPod.io 
+ - Terminal:                            e-dex ui, oh my zhs, chocolatey 
+ - Fonts:                               JetBrains Mono, Fira Code Mono 
+ - Docs:                                Dev Docs App 
+ - GUI Database:                        Postbird, Mongo Compass
+ - Code Versioning:                     Git
+ - Code Repository:                     GitHub, GitLab, GitBucket 
+ - Productivity and Collaboration:      Google Workspace, Notion, Slack, Discord, Stack Overflow, Linkedin, 
+ - Finance Manager:                     Quickbooks, BREX 
+ - Password Manager:                    1passwords
+ - Debugger:                            Reactotron
+ - API Request:                         Insomnia
+ - Browser:                             Google Chrome, Firefox, Brave, Edge, Opera (Extensões), Blisk, LT Browser
+ - UI Component Style:                  StoryBook.Js, Figma
+ - Cross Browser/ Respons. Testing      Lambdatest.com
+ - Quality Code                         SonarQube

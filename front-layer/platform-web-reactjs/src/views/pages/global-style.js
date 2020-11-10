@@ -19,11 +19,17 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   body {
     background: #F5F5F5;
     -webkit-font-smoothing: antialiased;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
   }
 
   body, input, button {

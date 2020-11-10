@@ -8,8 +8,8 @@
   "scripts": {
     "create-folders": "mkdir -p ./src/views/helpers ./config ./config/server ./lib ./src/controllers ./src/jobs ./src/middlewares ./src/views ./src/views/partials ./src/jobs",
 
-    "start-server": "nodemon config/server/server-connection.js",
-    "start-server:debug": "nodemon --inspect config/server/server-connection.js",
+    "start-server": "nodemon config/server/server-connect.js",
+    "start-server:debug": "nodemon --inspect config/server/server-connect.js",
     "start-redis": "nodemon config/redisDB/redis-connection.js",
     "start-redis-test":"NODE_ENV=test nodemon config/redisDB/redis-connection.js",
     "test": "NODE_ENV=test jest --detectOpenHandles"

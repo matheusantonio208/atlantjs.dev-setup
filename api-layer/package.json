@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -s -D -d dist --presets @babel/preset-env",
     "prod": "node dist/server.js",
-    "dev": "nodemon -w config/server/server-connection.js --exec \"babel-node config/server/server-connection.js --presets @babel/preset-env\""
+    "dev": "nodemon -w config/server/server-connect.js --exec \"babel-node config/server/server-connect.js --presets @babel/preset-env\"",
   },
   "keywords": [],
   "author": "",

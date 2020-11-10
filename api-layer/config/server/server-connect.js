@@ -1,5 +1,5 @@
 /* eslint no-console: "off" */
-import server from '#config/api-config.js';
+import server from '#config/server/api-config.js';
 
 class Server {
   constructor() {
