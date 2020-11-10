@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Container } from '#styles/example-style.js';
+import { Container } from './example-page-style.js';
 
 import { actionRequest } from '#behaviors/example-agregador/example-actions.js';
 

@@ -5,7 +5,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
     -webkit-text-size-adjust: 100%;
+    color: #313a46;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
@@ -48,4 +49,7 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  button, input[type="checkbox"], .soft-row {
+    transition-duration: .25s;
+  }
 `;
