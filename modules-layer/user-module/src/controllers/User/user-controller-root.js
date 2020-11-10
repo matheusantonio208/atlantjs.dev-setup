@@ -1,25 +1,28 @@
-import User from './user-repository';
-import JobQueue from '../../../lib/JobQueue';
+import JobQueue from '#lib/JobQueue.js';
 
-import JobWelcomeNewUser from '../../jobs/emails/WelcomeNewUser';
-import JobUpdatedUser from '../../jobs/emails/UpdatedUser';
-import JobDeletedUser from '../../jobs/emails/DeletedUser';
+import JobDeletedUser from '#jobs/emails/DeletedUser.js';
+import JobUpdatedUserEmail from '#jobs/emails/UpdatedUserEmail.js';
+import JobUpdatedUserPassword from '#jobs/emails/UpdatedUserPassword.js';
+import JobWelcomeNewUser from '#jobs/emails/WelcomeNewUser.js';
 
-import {updatedUserObject, newUserObject} from './user-object';
+import { updateUserObject, newUserObject } from './user-object.js';
+import User from './user-repository.js';
 
 class UserController {
   async show(req, res) {
     try {
       const userId = req.params.userId || req.body.user_id;
 
-      if (req.userId === userId) {
-        const user = await User.getUserById(userId);
-        return res.json(user);
+      if (userId !== req.userId) {
+        return res.status(401).json({
+          error_msg:
+            'The User must be logged in to have access to the information',
+        });
       }
-      return res.status(401).json({
-        error_msg:
-          'The User must be logged in to have access to the information',
-      });
+
+      const user = await User.getUserById(userId);
+
+      return res.json(user);
     } catch (error) {
       return res.status(401).json({ error_msg: error.toString() });
     }
@@ -27,17 +30,20 @@ class UserController {
 
   async store(req, res) {
     try {
-      if (await User.checkDuplicateEmail(email)) {
+      const newUser = newUserObject(req.body);
+      const isDuplicateEmail = await User.checkDuplicateEmail(newUser.email);
+
+      if (isDuplicateEmail) {
         return res.status(400).json({ error_msg: 'Email already register' });
       }
 
-      const user = await User.createUser(newUserObject(req.body));
+      const createdUser = await User.createUser(newUser);
 
-      if (user) {
-        await JobQueue.add(JobWelcomeNewUser.key, user);
+      if (createdUser) {
+        await JobQueue.add(JobWelcomeNewUser.key, createdUser);
       }
 
-      return res.json(user);
+      return res.json(createdUser);
     } catch (error) {
       return res.status(401).json({ error_msg: error.toString() });
     }
@@ -54,23 +60,20 @@ class UserController {
         });
       }
 
-      const user = await User.updateUserById(userId, updatedUserObject(req.body));
+      const updatedUser = await User.updateUserById(
+        userId,
+        updateUserObject(req.body),
+      );
 
-      if (user && req.body.password_hash) {
-        await JobQueue.add(JobUpdatedUser.key, {
-          user,
-          message_operation: 'A sua senha foi alterada',
-        });
+      if (updatedUser && req.body.password_hash) {
+        await JobQueue.add(JobUpdatedUserPassword.key, updatedUser);
       }
 
-      if (user && req.body.email) {
-        await JobQueue.add(JobUpdatedUser.key, {
-          user,
-          message_operation: 'O seu email foi alterado',
-        });
+      if (updatedUser && req.body.email) {
+        await JobQueue.add(JobUpdatedUserEmail.key, updatedUser);
       }
 
-      return res.json(user);
+      return res.json(updatedUser);
     } catch (error) {
       return res.status(401).json({ error_msg: error.toString() });
     }
@@ -80,18 +83,19 @@ class UserController {
     try {
       const userId = req.params.userId || req.body.user_id;
 
-      if (req.userId === userId) {
-        const findUser = await User.getUserById(userId);
-        const isDeleted = await User.deleteUserById(userId);
+      if (userId !== req.userId) {
+        return res.status(401).json({
+          error_msg: 'The user must be logged in to delete his account',
+        });
+      }
+      const userFound = await User.getUserById(userId);
+      const isDeleted = await User.deleteUserById(userId);
 
-        await JobQueue.add(JobDeletedUser.key, findUser);
-
-        return res.status(200).json(isDeleted);
+      if (isDeleted) {
+        await JobQueue.add(JobDeletedUser.key, userFound);
       }
 
-      return res.status(401).json({
-        error_msg: 'The user must be logged in to delete his account',
-      });
+      return res.status(200).json({ success_msg: 'User has been deleted' });
     } catch (error) {
       return res.status(401).json({ error_msg: error.toString() });
     }

@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "redisDB": "https://github.com/matheusantonio208/atlantjs.dev/database-layer/database-redis"
-  },
-  "relations":{
-    "user-module-front": "https://github.com/matheusantonio208/atlantjs.dev/user-module-front"
-  }
-}

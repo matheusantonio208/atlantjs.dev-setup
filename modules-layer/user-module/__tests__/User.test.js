@@ -1,19 +1,19 @@
 import request from 'supertest';
 import Mongoose from 'mongoose';
-import server from '../config/server/app';
+import server from '#config/server/api-config.js';
 
-import factory from './utils/factories';
+import factory from './utils/factories.js';
 
 describe('Session', () => {
   it('The user must be able to log into the application', async () => {
     const user = await factory.create('User');
 
-    const res = await request(server).post('/session/login').send({
+    const response = await request(server).post('/session/login').send({
       email: user.email,
       password_hash: user.password_hash,
     });
 
-    expect(res.status).toBe(201);
+    expect(response.status).toBe(201);
   });
 });
 
@@ -24,6 +24,7 @@ describe('User', () => {
 
   it('The user must register', async () => {
     const response = await factory.create('User');
+
     expect(response).toHaveProperty('_id');
   });
 
@@ -31,6 +32,7 @@ describe('User', () => {
     const user = await factory.attrs('User');
 
     await request(server).post('/user/registration').send(user);
+
     const response = await request(server)
       .post('/user/registration')
       .send(user);
@@ -48,23 +50,23 @@ describe('User', () => {
 
     const { token } = req.body;
 
-    const res = await request(server)
+    const response = await request(server)
       .get(`/user/${user.id}`)
       .set('Authorization', `Bearer ${token}`);
 
-    expect(res.status).toBe(200);
+    expect(response.status).toBe(200);
   });
 
   it("The user must not be able to access another user's information", async () => {
     const userA = await factory.create('User');
     const userB = await factory.create('User');
 
-    const req = await request(server).post('/session/login').send({
+    const reqUserA = await request(server).post('/session/login').send({
       email: userA.email,
       password_hash: userA.password_hash,
     });
 
-    const { token } = req.body;
+    const { token } = reqUserA.body;
 
     const res = await request(server)
       .get(`/user/${userB.id}`)
@@ -145,5 +147,3 @@ describe('User', () => {
     expect(res.status).toBe(401);
   });
 });
-
-// O usuário deve ser capaz de atualizar suas informações de cadastro

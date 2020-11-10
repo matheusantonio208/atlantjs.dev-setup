@@ -1,7 +1,8 @@
 import { factory } from 'factory-girl';
 import faker from 'faker';
 
-import User from '../../src/schemas/User';
+
+import User from '#schemas/User.js';
 
 factory.define('User', User, {
   first_name: faker.name.firstName(),

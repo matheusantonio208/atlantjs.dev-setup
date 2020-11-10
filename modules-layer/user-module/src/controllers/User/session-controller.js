@@ -1,15 +1,22 @@
 import Jwt from 'jsonwebtoken';
-import authConfig from '../../../config/auth-config';
-import User from './user-repository';
-import {loggedUserObject} from './user-object';
+
+import authConfig from '#config/auth-config.js';
+
+import { loginUserObject } from './user-object.js';
+import User from './user-repository.js';
 
 class SessionController {
   async store(req, res) {
     try {
-      const isLogged = await User.login(loggedUserObject(req.body));
+      const loginUser = loginUserObject(req.body);
+
+      const isLogged = await User.login(
+        loginUser.email,
+        loginUser.password_hash,
+      );
 
       if (isLogged) {
-        const user = await User.checkEmail(loggedUserObject(req.body).email);
+        const user = await User.checkEmail(loginUser.email);
 
         const userAccessToken = {
           user: { id: user.id, name: user.first_name },
