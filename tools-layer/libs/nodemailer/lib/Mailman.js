@@ -36,7 +36,7 @@ class Mailman {
     );
   }
 
-  sendMail(message) {
+  sendEmail(message) {
     return this.transporter.sendMail({
       ...mailConfig.default,
       ...message,
