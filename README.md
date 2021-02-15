@@ -60,34 +60,42 @@ We aim at the security of information transferred from end to end through the ap
 Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atlantjs.dev-setup" target="__blank"><img src="https://img.shields.io/badge/Start-Gitpod-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
 </p>
 
-### ARCH
+### 📐 Architecture
+<p>
 === IDEALIZAÇÃO/ CONCEPÇÃO ===
 1.0 Philosophy
 1.1 Epiphany
-
+</p>
+<p>
 === Ambientes ===
 2.0 Workstation
 2.1 Infrastructure
-
+</p>
+<p>
 === BACKEND ===
 3.0 Core Engine
-
+</p>
+<p>
 4.0 Database Redis
 4.1 Database MongoDB
 4.2 Database Postgres
-
+</p>
+<p>
 === API ===
 5.0 Modules
 5.1 Tools
-
+</p>
+<p>
 === Tests ===
 6.0 Test Backend
 6.1 Test Frontend
-
+</p>
+<p>
 === FRONTEND ===
 7.0 Core Web Template View
 7.1 Core Web ReactJS
 7.2 Core Mobile React Native
+</p>
 
 ### :bug: Bugs and feature requests
 ---
