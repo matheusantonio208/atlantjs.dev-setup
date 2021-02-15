@@ -63,8 +63,8 @@ Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atl
 ### 📐 Architecture
 ---
 <p align="center">
-<img src="https://github.com/matheusantonio208/atlantjs.dev-setup/blob/main/.brand/rings-atlantjs.svg" alt="A beautiful and minimal architecture." width="350"><br>
-
+<img src="https://github.com/matheusantonio208/atlantjs.dev-setup/blob/main/.brand/rings-atlantjs.svg" alt="A beautiful and minimal architecture." width="350">
+</p>
 **IDEALIZAÇÃO/ CONCEPÇÃO** 
 <p>
 1.0 Philosophy
