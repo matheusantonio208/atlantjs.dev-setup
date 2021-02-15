@@ -14,7 +14,7 @@
 
 ### :bookmark_tabs:Table of Contents
 ---
-- [Philosophy](#shinto_shrine-philosophy)
+- [Philosophy](#%EF%B8%8F-philosophy)
 - [Get Started](#arrow_forward-get-started)
 - [Components and Features](#diamond_shape_with_a_dot_inside-components-and-features)
 - [Bugs and feature requests](#bug-and-feature-requests)
