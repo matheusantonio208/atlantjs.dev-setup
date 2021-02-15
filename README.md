@@ -60,7 +60,7 @@ We aim at the security of information transferred from end to end through the ap
 Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atlantjs.dev-setup" target="__blank"><img src="https://img.shields.io/badge/Start-Gitpod-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
 </p>
 
-### 📐 Architecture
+### ⭕ Architecture
 ---
 <p align="center">
 <img src="https://github.com/matheusantonio208/atlantjs.dev-setup/blob/main/.brand/rings-atlantjs.svg" alt="A beautiful and minimal architecture.">
