@@ -53,10 +53,10 @@ We aim at the security of information transferred from end to end through the ap
 2. Copy the files referring to the layers needed for the project, and paste them in the root folder of your project
 3. After pasting, you will have duplicate files, such as `"package.json"` and `"package copy.json"`
 4. Merge both files into one, copying the contents of the -copy files to the default file.
-5. Run `yarn install`
-6. Run in local `yarn dev`
+5. Run `pnpm install` or `yarn install`
+6. Run in local `pnpm dev` or `yarn dev`
 7. Access the application through `http://localhost:8080/`
-8. Build to production `yarn build`
+8. Build to production `pnpm build` or `yarn build`
 
 <p align="center">
 Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atlantjs.dev-setup" target="__blank"><img src="https://img.shields.io/badge/Start-Gitpod-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
