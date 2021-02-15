@@ -12,6 +12,24 @@
 <b>Project Status:</b>  In development ⚠️
 </p>
 
+### :bookmark_tabs:Table of Contents
+---
+- [Get Started](#arrow_forward-get-started)
+- [Components and Features](#diamond_shape_with_a_dot_inside-components-and-features)
+- [Bugs and feature requests](#bug-and-feature-requests)
+
+### :arrow_forward: Get Started
+---
+1. <a href="https://github.com/matheusantonio208/protontype/archive/main.zip">Download</a> or clone repository with `git clone https://github.com/matheusantonio208/protontype.git`
+2. Navigate to the project's root folder `cd ~/protontype`
+3. Run `yarn install`
+4. Run in local `yarn dev`
+5. Access the application through `http://localhost:8080/`
+6. Build to production `yarn build`
+
+<p align="center">
+Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/protontype" target="__blank"><img src="https://img.shields.io/badge/Start-Gitpod-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
+</p>
 
 ### ARCH
 === IDEALIZAÇÃO/ CONCEPÇÃO ===
@@ -42,7 +60,11 @@
 7.1 Core Web ReactJS
 7.2 Core Mobile React Native
 
+### :bug: Bugs and feature requests
+---
+Have a bug or a feature request? Please first read the issue guidelines and search for existing and closed issues. If your problem or idea is not addressed yet, <a href="https://github.com/matheusantonio208/protontype/issues/new">please open a new issue</a>.
 
-* Template de arquitetura de projeto !== Arquitetura de informação (projeto = organização e disposição dos arquivos - informação: a forma como a informação é trafegada e tratada pela sua aplicação)
-* New layer: Performance analysis; Packages: 0x, Autocannon, Clinic.js
-* Add new page template in frontend layer com grid estilo Bootstrap UI Guide
+---
+<p align="center">
+Make with 💚 by Matheus Antonio
+</p>
