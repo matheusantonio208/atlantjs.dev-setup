@@ -61,14 +61,20 @@ Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atl
 </p>
 
 ### 📐 Architecture
+---
+**IDEALIZAÇÃO/ CONCEPÇÃO** 
 <p>
-=== IDEALIZAÇÃO/ CONCEPÇÃO ===
 1.0 Philosophy
-1.1 Epiphany
 </p>
 <p>
-=== Ambientes ===
+1.1 Epiphany
+</p>
+
+**Ambientes**
+<p>
 2.0 Workstation
+</p>
+<p>
 2.1 Infrastructure
 </p>
 <p>
