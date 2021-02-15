@@ -63,47 +63,7 @@ Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atl
 ### 📐 Architecture
 ---
 <p align="center">
-<img src="https://github.com/matheusantonio208/atlantjs.dev-setup/blob/main/.brand/rings-atlantjs.svg" alt="A beautiful and minimal architecture." width="350">
-</p>
-**IDEALIZAÇÃO/ CONCEPÇÃO** 
-<p>
-1.0 Philosophy
-</p>
-<p>
-1.1 Epiphany
-</p>
-
-**Ambientes**
-<p>
-2.0 Workstation
-</p>
-<p>
-2.1 Infrastructure
-</p>
-<p>
-=== BACKEND ===
-3.0 Core Engine
-</p>
-<p>
-4.0 Database Redis
-4.1 Database MongoDB
-4.2 Database Postgres
-</p>
-<p>
-=== API ===
-5.0 Modules
-5.1 Tools
-</p>
-<p>
-=== Tests ===
-6.0 Test Backend
-6.1 Test Frontend
-</p>
-<p>
-=== FRONTEND ===
-7.0 Core Web Template View
-7.1 Core Web ReactJS
-7.2 Core Mobile React Native
+<img src="https://github.com/matheusantonio208/atlantjs.dev-setup/blob/main/.brand/rings-atlantjs.svg" alt="A beautiful and minimal architecture.">
 </p>
 
 ### :bug: Bugs and feature requests
