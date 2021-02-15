@@ -16,7 +16,7 @@
 ---
 - [Philosophy](#%EF%B8%8F-philosophy)
 - [Get Started](#arrow_forward-get-started)
-- [Components and Features](#diamond_shape_with_a_dot_inside-components-and-features)
+- [Architecture](#-architecture)
 - [Bugs and feature requests](#bug-and-feature-requests)
 
 
@@ -50,11 +50,13 @@ We aim at the security of information transferred from end to end through the ap
 ### :arrow_forward: Get Started
 ---
 1. <a href="https://github.com/matheusantonio208/atlantjs.dev-setup/archive/main.zip">Download</a> or clone repository with `git clone https://github.com/matheusantonio208/atlantjs.dev-setup.git`
-2. Navigate to the project's root folder `cd ~/atlantjs.dev-setup`
-3. Run `yarn install`
-4. Run in local `yarn dev`
-5. Access the application through `http://localhost:8080/`
-6. Build to production `yarn build`
+2. Copy the files referring to the layers needed for the project, and paste them in the root folder of your project
+3. After pasting, you will have duplicate files, such as `"package.json"` and `"package copy.json"`
+4. Merge both files into one, copying the contents of the -copy files to the default file.
+5. Run `yarn install`
+6. Run in local `yarn dev`
+7. Access the application through `http://localhost:8080/`
+8. Build to production `yarn build`
 
 <p align="center">
 Or click in <a href="https://gitpod.io/#https://github.com/matheusantonio208/atlantjs.dev-setup" target="__blank"><img src="https://img.shields.io/badge/Start-Gitpod-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
@@ -72,5 +74,5 @@ Have a bug or a feature request? Please first read the issue guidelines and sear
 
 ---
 <p align="center">
-Make with 💚 by Matheus Antonio
+Make with ❤️ by Matheus Antonio
 </p>
